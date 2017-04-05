@@ -1,0 +1,9 @@
+<h1>Meetups</h1>
+
+
+<ul>
+  <% @meetups.each do |meetup| %>
+    <img src="<%= meetup.picture %>" width=300px>
+    <h3><a href ='/meetups/<%= meetup.id %>'><%= meetup.name %></a></h3>
+  <% end %>
+</ul>
